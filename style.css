@@ -59,11 +59,10 @@ select {
 
 
 
-#app {
+
+.nav{
   width: 80%;
   margin: 0px auto;
-}
-.nav{
   display: flex;
   flex-wrap: wrap;
   
@@ -84,4 +83,33 @@ li{
 a{
   text-decoration: none;
   color: inherit;
+}
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+header{
+  background: radial-gradient(#fff,#ffd6d6);
+}
+.left-section a button{
+  background-color: rgb(253, 125, 51);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  margin-top: 1em;
+  
+}
+.categories{
+  padding: 3em;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: center;
+  
+}
+.categories img{
+  border-radius: 5px;
 }
