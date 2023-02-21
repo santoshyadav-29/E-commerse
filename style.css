@@ -64,7 +64,7 @@ select {
   width: 90%;
   margin: 0px auto;
   display: flex;
-  flex-wrap: wrap;
+  
   
   justify-content: space-between;
   padding: 1em;
@@ -109,7 +109,15 @@ header{
   grid-template-columns: 25% 25% 25%;
   justify-content: center;
   
+  
 }
 .categories img{
   border-radius: 6px;
+  transition: all .5s ease-in-out;
+}
+.categories img:hover{
+  
+  transform: scale(110%);
+  z-index: 1;
+ 
 }
