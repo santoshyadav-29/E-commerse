@@ -125,3 +125,45 @@ body
 {
   background: radial-gradient(#fff,#ffd6d6);
 }
+
+footer {
+  z-index: 1;
+  position: relative;
+  box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.2);
+  /* border-top: 5px solid blue;? */
+  margin-top: 5rem;
+  padding: 2rem;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.TopFooter  {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+ flex-flow: row wrap;
+  margin-bottom: 1em;
+}
+
+
+.BottonFooter
+{
+  text-align: center;
+  text-decoration: underline grey 1px;
+  
+}
+.TopFooter img{
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+.TopFooter img:hover{
+  transform: scale(110%);
+  
+}
