@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background: radial-gradient(#fff,#ffd6d6);
+    background-image: url("./wave.svg");
+    /* background-repeat: no-repeat; */
+    /* background-size: 100vh; */
+    /* background-size: 100%; */
+}
+.nav {
+  width: 90%;
+  display: flex;
+  margin: 0px auto;
+  display: flex;
+
+  justify-content: space-between;
+  padding: 1em;
+}
+
+li {
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav logo {
+  width: 60%;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1.5em;
+}
+main {
+  margin: 5%;
+}
+
+.topmain h7 {
+  
+  
+  margin-bottom: 2%;
+  font-size: larger;
+  color: rgb(65, 52, 163);
+}
+
+.topmain h7 {
+  
+  margin-bottom: 2%;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: rgb(92, 83, 161);
+}
+
+.topmain hr {
+  margin-bottom: 2%;
+  width: 08vw;
+ 
+  border: solid rgb(65, 52, 163) 0.5px;
+}
+button {
+  background-color: rgb(65, 52, 163);
+  color: aliceblue;
+  width: 30%;
+  height: 13%;
+  
+  border-radius: 8px; margin: 5%0;
+ 
+}
+main{
+    color: rgb(65, 52, 163);
+    display: flex;
+    margin: 10% 0;
+}
+.left{
+    
+     margin-left: 10%; 
+}
+
+body{
+     
+      background-size: fill;
+     
+}
+
+.container
+{
+    position: relative;
+}
+
+.information
+{
+    position: absolute;
+    top:20px
+}
+.info{
+  max-width: 80ch;
+
+}

@@ -89,9 +89,9 @@ a{
   grid-template-columns: 1fr 1fr;
   place-items: center;
 }
-header{
+/* header{
   background: radial-gradient(#fff,#ffd6d6);
-}
+} */
 .left-section a button{
   background-color: rgb(253, 125, 51);
   cursor: pointer;
@@ -120,4 +120,8 @@ header{
   transform: scale(110%);
   z-index: 1;
  
+}
+body
+{
+  background: radial-gradient(#fff,#ffd6d6);
 }
