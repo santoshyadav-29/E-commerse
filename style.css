@@ -1,169 +1,218 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-
-
-/* A elements that don't have a class get default styles */
-
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-
-
-
-.nav{
-  width: 90%;
-  margin: 0px auto;
-  display: flex;
-  
-  
-  justify-content: space-between;
-  padding: 1em;
-}
-.logo img{
-  width: 60%;
-  
-}
-.nav-list ul{
-  display: flex;
-  gap:1em;
-}
-li{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-  color: inherit;
-}
-.hero-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-}
-/* header{
-  background: radial-gradient(#fff,#ffd6d6);
-} */
-.left-section a button{
-  background-color: rgb(253, 125, 51);
-  cursor: pointer;
-  border: none;
-  border-radius: 8px;
-  padding: 0.5rem;
-  margin: 0.25rem;
-  margin-top: 1em;
-  
-}
-.categories{
-  padding: 3em;
-  display: grid;
-  gap: 1em;
-  grid-template-columns: 25% 25% 25%;
-  justify-content: center;
-  
-  
-}
-.categories img{
-  border-radius: 6px;
-  transition: all .5s ease-in-out;
-}
-.categories img:hover{
-  
-  transform: scale(110%);
-  z-index: 1;
- 
-}
-body
-{
-  background: radial-gradient(#fff,#ffd6d6);
-}
-
-footer {
-  z-index: 1;
-  position: relative;
-  box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.2);
-  /* border-top: 5px solid blue;? */
-  margin-top: 5rem;
-  padding: 2rem;
-  display: flex;
-  gap: 1em;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-.TopFooter  {
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
- flex-flow: row wrap;
-  margin-bottom: 1em;
-}
-
-
-.BottonFooter
-{
-  text-align: center;
-  text-decoration: underline grey 1px;
-  
-}
-.TopFooter img{
-  width: 50px;
-  text-align: center;
-  border-radius: 50%;
-  transition: all .3s ease-in-out;
-}
-.TopFooter img:hover{
-  transform: scale(110%);
-  
-}
+    /* Box sizing rules */
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    .h-primary {
+        font-size: 2em;
+        color: rgb(215, 81, 4);
+        text-align: center;
+    }
+    /* Remove default margin */
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    figure,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+    }
+    /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+    
+    ul[role='list'],
+    ol[role='list'] {
+        list-style: none;
+    }
+    /* Set core root defaults */
+    
+    html:focus-within {
+        scroll-behavior: smooth;
+    }
+    /* Set core body defaults */
+    
+    body {
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+    }
+    /* A elements that don't have a class get default styles */
+    /* Make images easier to work with */
+    
+    img,
+    picture {
+        max-width: 100%;
+        display: block;
+    }
+    /* Inherit fonts for inputs and buttons */
+    
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+    
+    .nav {
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    
+    .logo img {
+        width: 60%;
+    }
+    
+    .nav-list ul {
+        display: flex;
+        gap: 1em;
+    }
+    
+    .nav-list ul a {
+        font-size: 1.1em;
+        color: rgb(7, 7, 7);
+        padding: 2px 10px;
+        border-radius: 5px;
+        border: 1px brown;
+        box-shadow: 0 2px #999;
+        text-decoration: none;
+        /* transition: all 1s ease-in-out; */
+    }
+    
+    .nav-list ul a:hover {
+        /* transform: scale(1.3); */
+        background-color: rgba(253, 125, 51, 0.574);
+        transform: scale(1.2);
+        border-radius: 19px;
+        color: rgb(34, 7, 141);
+        text-decoration: underline;
+        transform: scale(1.3);
+    }
+    
+    .nav-list ul a:active {
+        box-shadow: 0 3px #302e2e;
+        transform: translateY(4px);
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    
+    header {
+        background: radial-gradient(#fff, #ffd6d6);
+    }
+    
+    .left-section a button {
+        background-color: rgb(253, 125, 51);
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem;
+        margin: 0.25rem;
+        margin-top: 1em;
+    }
+    
+    .categories {
+        padding: 3em;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: center;
+    }
+    
+    .categories img {
+        border-radius: 6px;
+        transition: all .5s ease-in-out;
+    }
+    
+    .categories img:hover {
+        transform: scale(110%);
+        z-index: 1;
+    }
+    /* conatct section */
+    
+    #contact {
+        position: relative;
+    }
+    
+    #contact::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+        background: url("./images/category-3.jpg") no-repeat center center/cover;
+    }
+    
+    #contact-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #contact-box input,
+    textarea {
+        margin-top: 10px;
+        width: 90%;
+        padding: 0.9em;
+        /* height: 20px; */
+        background-color: rgba(120, 119, 117, 0.414);
+        border: none;
+        color: #000000;
+        border-left: 3px solid rgb(253, 125, 51);
+        /* border-left: 2px solid rgb(253, 125, 51); */
+        /* border-radius: 10px; */
+    }
+    
+    #contact-box label {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    #contact-box form {
+        width: 40%;
+        position: relative;
+        margin: auto;
+    }
+    
+    .btn {
+        background-color: rgb(253, 125, 51);
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem;
+        margin: 0.25rem;
+        margin-top: 1em;
+    }
+    
+    .btn:hover {
+        background-color: rgba(253, 125, 51, 0.574);
+        transform: scale(1.2);
+        border-radius: 19px;
+        color: rgb(34, 7, 141);
+        text-decoration: underline;
+    }
+    
+    .form-button {
+        text-align: center;
+    }
