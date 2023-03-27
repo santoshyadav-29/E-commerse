@@ -79,12 +79,12 @@
     .nav-list ul a {
         font-size: 1.1em;
         color: rgb(7, 7, 7);
-        padding: 2px 10px;
+        padding: 0.7em;
         border-radius: 5px;
         border: 1px brown;
-        box-shadow: 0 2px #999;
-        text-decoration: none;
-        /* transition: all 1s ease-in-out; */
+  
+        
+        transition: all 0.5s ease-in-out;
     }
     
     .nav-list ul a:hover {
@@ -93,7 +93,7 @@
         transform: scale(1.2);
         border-radius: 19px;
         color: rgb(34, 7, 141);
-        text-decoration: underline;
+        text-decoration: overline;
         transform: scale(1.3);
     }
     
@@ -148,71 +148,47 @@
         transform: scale(110%);
         z-index: 1;
     }
+    footer {
+      z-index: 1;
+      position: relative;
+      box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.2);
+      /* border-top: 5px solid blue;? */
+      margin-top: 5rem;
+      padding: 2rem;
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+    
+    .TopFooter  {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+     flex-flow: row wrap;
+      margin-bottom: 1em;
+    }
+    
+    
+    .BottonFooter
+    {
+      text-align: center;
+      text-decoration: underline grey 1px;
+      
+    }
+    .TopFooter img{
+      width: 50px;
+      text-align: center;
+      border-radius: 50%;
+      transition: all .3s ease-in-out;
+    }
+    .TopFooter img:hover{
+      transform: scale(110%);
+      
+    }
+    
     /* conatct section */
     
-    #contact {
-        position: relative;
-    }
-    
-    #contact::before {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        opacity: 0.3;
-        background: url("./images/category-3.jpg") no-repeat center center/cover;
-    }
-    
-    #contact-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #contact-box input,
-    textarea {
-        margin-top: 10px;
-        width: 90%;
-        padding: 0.9em;
-        /* height: 20px; */
-        background-color: rgba(120, 119, 117, 0.414);
-        border: none;
-        color: #000000;
-        border-left: 3px solid rgb(253, 125, 51);
-        /* border-left: 2px solid rgb(253, 125, 51); */
-        /* border-radius: 10px; */
-    }
-    
-    #contact-box label {
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-    
-    #contact-box form {
-        width: 40%;
-        position: relative;
-        margin: auto;
-    }
-    
-    .btn {
-        background-color: rgb(253, 125, 51);
-        cursor: pointer;
-        border: none;
-        border-radius: 8px;
-        padding: 0.5rem;
-        margin: 0.25rem;
-        margin-top: 1em;
-    }
-    
-    .btn:hover {
-        background-color: rgba(253, 125, 51, 0.574);
-        transform: scale(1.2);
-        border-radius: 19px;
-        color: rgb(34, 7, 141);
-        text-decoration: underline;
-    }
-    
-    .form-button {
-        text-align: center;
-    }

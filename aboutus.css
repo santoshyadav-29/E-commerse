@@ -1,4 +1,6 @@
-
+body{
+  background: radial-gradient(#fff, #ffd6d6);
+}
 .AboutUs-Container{
     display: flex;
     flex-direction: column;
@@ -18,7 +20,7 @@ AboutUs-Container h2{
     font-weight: 700;
    background-color: aquamarine;
     text-align: center;
-    color:rgb(65, 52, 163);
+    color:rgb(0, 0, 0);
 
 }
 .AboutUs-Container .info{
@@ -26,7 +28,7 @@ AboutUs-Container h2{
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    color: #4134a3;
+    color: #000000;
     max-width: 70ch;
     
 }
