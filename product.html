@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/svg+xml" href="./images/cart.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Products</title>
+    <style>
+        body {
+            background: radial-gradient(#fff, #ffd6d6);
+        }
+        .products_collection {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 80%;
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
+            width: 20%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product img {
+            width: 100%;
+        }
+        .product h3 {
+            font-weight: bold;
+        }
+        .product button {
+            border:solid;
+            font-weight: bold;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            
+        }
+        .product button:hover {
+            background-color: #555;
+        }
+        .button_clicked::after{
+            content: "    Added to cart";
+            color: green;
+            
+        }
+        
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="nav">
+            <div class="logo"><img src="./images/logo.png" alt="logo" /></div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./product.html">products</a></li>
+                    <li><a href="./aboutus.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="./">Account</a></li>
+                </ul>
+            </div>
+        </div>
+        </header>
+    
+    <div class="products_collection">
+        <div class="product">
+          <img src="./images/product-1.jpg" alt="iphone" />
+          <h3>iPhone 12</h3>
+          <h2>Price: $1000</h2>
+          <button >Buy</button>
+        </div>
+        <div class="product">
+          <img src="./images/product-1.jpg" alt="iphone" />
+          <h3>iPhone 12</h3>
+          <h2>Price: $1000</h2>
+          <button >Buy</button>
+        </div>
+        <div class="product">
+          <img src="./images/product-1.jpg" alt="iphone" />
+          <h3>iPhone 12</h3>
+          <h2>Price: $1000</h2>
+          <button >Buy</button>
+        </div>
+        <div class="product">
+          <img src="./images/product-1.jpg" alt="iphone" />
+          <h3>iPhone 12</h3>
+          <h2>Price: $1000</h2>
+          <button >Buy</button>
+        </div>
+        <div class="product">
+          <img src="./images/product-1.jpg" alt="iphone" />
+          <h3>iPhone 12</h3>
+          <h2>Price: $1000</h2>
+          <button class="button" >Buy</button>
+        </div>
+        <div class="product">
+          <img src="./images/product-1.jpg" alt="iphone" />
+          <h3>iPhone 12</h3>
+          <h2>Price: $1000</h2>
+          <button class="button" >Buy</button>
+        </div>
+    </div>
+
+<script>
+    const button = document.querySelector(".button");
+    button.addEventListener("click", () => {
+        button.classList.add("button_clicked");
+        setTimeout(() => {
+            button.classList.remove("button_clicked");
+        }, 2000);
+    });
+</script>
+
+  </body>
+</html>
